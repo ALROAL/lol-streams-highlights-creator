@@ -1,0 +1,8 @@
+/venv
+/dev_notebooks
+/.vscode
+/.idea
+# Pyhon byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
