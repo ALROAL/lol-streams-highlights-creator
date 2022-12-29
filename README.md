@@ -1,7 +1,7 @@
 League of Legends Twitch streams highlights creator
 ==============================
 
-<img src="https://imgur.com/zWuos61" width="1024" height="512">
+<img src="https://i.imgur.com/zWuos61.png" width="1024" height="512">
 
 Download League of Legends Twitch streams and process the raw stream video to create gameplay highlights videos. Optionally, automatically upload them to YouTube.
 
@@ -65,7 +65,7 @@ Alternatively, download the Docker image from here and follow the instructions f
 ## Description
 This project automatizes the whole process of video editing [League of Legends](https://www.leagueoflegends.com/) streams from [Twitch](https://www.twitch.tv/) and uploading them to [YouTube](https://www.youtube.com/). First, the videos are downloaded from Twitch using Selenium and the online video downloader [youtube4kdownloader](https://youtube4kdownloader.com/). Then, raw stream videos are processed to find the League of Legends games and extract identifying information from the games that is later used to download the games data in JSON format from [Riot's API](https://developer.riotgames.com/). The game data includes timestamps from the relevant events from the game that are used to create the final highlights video. Finally, the highlights videos can be uploaded to YouTube using the [Youtube Data API v3](https://developers.google.com/youtube/v3) (requires OAuth 2.0).
 
-![project-workflow](https://imgur.com/pBmFHD5)
+![project-workflow](https://i.imgur.com/pBmFHD5.png)
 ## Usage
 
 ```console
