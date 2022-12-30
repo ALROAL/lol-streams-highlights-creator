@@ -60,7 +60,7 @@ After creating your credentials, download the `client_secrets.json` (it would be
 
 > **_NOTE:_** The `./database` folder is created by default in the project's directory. All raw stream videos, games videos and highlights videos will be stored there. If facing storage problems, it is possible to change the database location by specifying the desired path (i.e `D:/database/`) in the `./src/paths.py` script. Just remember to create/move `./database/STREAMERS.json` and `./database/KEYS` and its content to the new database location.
 
-Alternatively, download the Docker image from here and follow the instructions from there.
+Alternatively, download the Docker image and follow the instructions from [here](https://hub.docker.com/repository/docker/alroal/lol-streams-highlights-creator).
 
 ## Description
 This project automatizes the whole process of video editing [League of Legends](https://www.leagueoflegends.com/) streams from [Twitch](https://www.twitch.tv/) and uploading them to [YouTube](https://www.youtube.com/). First, the videos are downloaded from Twitch using Selenium and the online video downloader [youtube4kdownloader](https://youtube4kdownloader.com/). Then, raw stream videos are processed to find the League of Legends games and extract identifying information from the games that is later used to download the games data in JSON format from [Riot's API](https://developer.riotgames.com/). The game data includes timestamps from the relevant events from the game that are used to create the final highlights video. Finally, the highlights videos can be uploaded to YouTube using the [Youtube Data API v3](https://developers.google.com/youtube/v3) (requires OAuth 2.0).
@@ -102,4 +102,5 @@ options:
 
 ## Results
 
-I created the YouTube channel ([Shimmer Addict](https://www.youtube.com/channel/UCTQQV9W6Pwjjn0PCIXuEzPw)) to upload the created highglights videos for people to watch them. The sucess of the channel could be an indicator of the quality of the videos created with this project. Go have a look and feel free to subscribe ;)
+I created the YouTube channel ([Shimmer Addict](https://www.youtube.com/channel/UCTQQV9W6Pwjjn0PCIXuEzPw)) to upload the created highlights videos for people to watch them. The sucess of the channel could be an indicator of the quality of the videos created with this project. Go have a look and feel free to subscribe ;)
+[![Watch the video](https://img.youtube.com/vi/ST8rufE-jkU/maxresdefault.jpg)](https://www.youtube.com/watch?v=ST8rufE-jkU)
