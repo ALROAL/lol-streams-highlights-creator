@@ -19,9 +19,11 @@ RUN wget https://github.com/tesseract-ocr/tessdata_best/raw/main/eng.traineddata
 RUN mv -v eng.traineddata /usr/local/share/tessdata/
 
 COPY requirements.txt .
+RUN pip install -r requirements.txt
+
 #To solve CV2 problems
 RUN apt-get update && apt-get install -y python3-opencv
-RUN pip install -r requirements.txt
+RUN pip install opencv-python==4.6.0.66
 
 # install google chrome
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -

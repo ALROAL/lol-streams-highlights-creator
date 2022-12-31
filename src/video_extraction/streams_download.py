@@ -84,7 +84,7 @@ def download_videos_from_twitch(streamer, n_prev_days=3):
                     if game_title == "League of Legends":
                         gameplay_duration += [(current_time, game_time_seconds)]
 
-                    current_time = game_time_seconds
+                    current_time += game_time_seconds
                 
                 stream_info_dict[video_id] = gameplay_duration
 
